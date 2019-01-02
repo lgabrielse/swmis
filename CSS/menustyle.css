@@ -1,0 +1,45 @@
+ul {
+    font-family: Arial, Verdana;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ul li {
+    display: block;
+    position: relative;
+    float: left;
+	line-height:1.5em;  /* added to make box larger*/  
+    font-size: 24px; /* added to make font larger*/ 
+}
+li ul {
+    display: none;
+}
+ul li a {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    border-top: 1px solid #ffffff;
+    padding: 5px 25px 5px 15px;
+    background: #336699; /*#1e7c9a;*/
+    margin-left: 2px;
+    white-space: nowrap;
+	line-height:1.5em;  /* added to make box larger*/  
+    font-size: 24px; /* added to make font larger*/ 
+}
+
+ul li a:hover {
+background: #3b3b3b;
+}
+li:hover ul {
+    display: block;
+    position: absolute;
+}
+li:hover li {
+    float: none;
+    font-size: 11px;
+}
+li:hover a { background: #3b3b3b; }
+li:hover li a:hover {
+    background: #1e7c9a;
+}
